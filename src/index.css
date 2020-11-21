@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.header {
+  padding: 5px;
+  background-color: rgb(22, 127, 175);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.location-icon {
+  font-size: 1.875rem;
+  color: rgb(253, 68, 68);
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loader img {
+  width: 400px;
+}
+
+.loader h1 {
+  margin-top: -100px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(85, 75, 75, 0.616);
+}
+
+.loader h1 span {
+  color: rgb(20, 50, 182);
+}
+
+.location-info {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+  font-size: 17.5px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-info ul li {
+  padding: 5px 0;
 }
